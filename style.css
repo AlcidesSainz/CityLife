@@ -17,17 +17,21 @@ body {
   height: 100%;
 }
 #city {
-  width: 100%;
+  width: 120%;
   object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
+  margin-top: 8%;
+  margin-left: -12%;
+  z-index: 0;
 }
 #cloud {
   width: 30%;
   position: absolute;
   margin-top: 5%;
   margin-left: 26%;
+  z-index: 1;
 }
 #cloud1 {
   width: 25%;
@@ -49,14 +53,19 @@ body {
   position: absolute;
   z-index: 1;
 }
-#plane{
+#plane {
   z-index: 0;
   width: 4%;
   position: absolute;
   margin-top: 30%;
 }
-#spiderman{
-  width: 100%;
+#spiderman {
+  
+  margin-left: 45%;
+  margin-top: 20%;
+  position: absolute;
+  z-index: 1;
+  width: 4%;
 }
 #container-city {
   display: flex;
