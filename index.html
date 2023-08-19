@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <img id="backgroundImg" src="img/sunny2.jpg.png" alt="" />
+    <div id="container-city">
+      <div id="container/clouds">
+        <img id="cloud1" src="img/cloud 2.png" alt="" />
+        <img id="cloud" src="img/cloud.png" alt="" />
+        <img id="cloud3" src="img/cloud.png" alt="" />
+        <img id="cloud4" src="img/cloud 2.png" alt="" />
+        <img
+          id="plane"
+          src="img/plane-silhouette-th.png"
+          alt=""
+          onload="airplaneFlying()"
+        />
+      </div>
+
+      <img id="city" src="img/newyork1.png" alt="" />
+    </div>
+  </body>
+</html>

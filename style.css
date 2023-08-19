@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(img/sunny2.jpg.png);
+  background-repeat: no-repeat;
+  width: 500px;
+}
+#backgroundImg {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#city {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#cloud {
+  width: 30%;
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 26%;
+}
+#cloud1 {
+  width: 25%;
+  margin-top: 12%;
+  position: absolute;
+  z-index: 1;
+}
+#cloud3 {
+  width: 30%;
+  margin-top: 19%;
+  margin-left: 49%;
+  position: absolute;
+  z-index: 0;
+}
+#cloud4 {
+  width: 40%;
+  margin-top: -10%;
+  margin-left: 70%;
+  position: absolute;
+  z-index: 1;
+}
+#plane{
+  z-index: 0;
+  width: 4%;
+  position: absolute;
+  margin-top: 30%;
+}
+#spiderman{
+  width: 100%;
+}
+#container-city {
+  display: flex;
+}
+#container-clouds {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
