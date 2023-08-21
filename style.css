@@ -1,6 +1,6 @@
 body {
   overflow: hidden;
-}  
+}
 #backgroundImg {
   width: 100%;
   object-fit: cover;
@@ -20,33 +20,7 @@ body {
   margin-left: -12%;
   z-index: 0;
 }
-#cloud {
-  width: 30%;
-  position: absolute;
-  margin-top: 5%;
-  margin-left: 26%;
-  z-index: 1;
-}
-#cloud1 {
-  width: 25%;
-  margin-top: 12%;
-  position: absolute;
-  z-index: 1;
-}
-#cloud3 {
-  width: 30%;
-  margin-top: 19%;
-  margin-left: 49%;
-  position: absolute;
-  z-index: 0;
-}
-#cloud4 {
-  width: 40%;
-  margin-top: -10%;
-  margin-left: 70%;
-  position: absolute;
-  z-index: 1;
-}
+
 #plane {
   z-index: 0;
   width: 4%;
@@ -54,29 +28,9 @@ body {
   margin-top: 30%;
 }
 
-#spiderman {
-  margin-left: 53.7%;
-  margin-top: 28%;
-  position: absolute;
-  z-index: 1;
-  width: 4%;
-}
-#container-crow {
-  position: absolute;
-  z-index: 0;
-  display: flex;
-  flex-direction: column;
-  margin-top: 20%;
-  margin-left: 41%;
-}
-#container-crow2 {
-  position: absolute;
-  z-index: 0;
-  display: flex;
-  flex-direction: column;
-  margin-top: 40%;
-  margin-left: 5%;
-}
+
+
+
 #crow {
   width: 1%;
 }
@@ -107,6 +61,71 @@ body {
   flex-direction: column;
   position: absolute;
 }
+#smoke {
+  position: absolute;
+  margin-left: 92.2%;
+  margin-top: 26.3%;
+  width: 3%;
+  animation: smokeEffect 7s linear infinite;
+}
+
+@keyframes smokeEffect {
+  0% {
+    transform: rotate(0deg) translateY(0);
+    opacity: 1;
+    filter: blur(1px);
+  }
+
+  100% {
+    transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+    filter: blur(20px);
+  }
+}
+#fire{
+  position: absolute;
+  width: 2%;
+  margin-left: 93.8%;
+  margin-top: 30.4%;
+  z-index: 3;
+  animation: fireAnimation 0.5s infinite alternate;
+
+}
+#car{
+  position: absolute;
+  width: 3%;
+  margin-left: 24%;
+  margin-top: 48.2%;
+}
+#car2{
+  position: absolute;
+  width: 3%;
+  margin-left: 7%;
+  margin-top: 48.2%;
+}
+#car3{
+  position: absolute;
+  width: 3%;
+  margin-left: 24%;
+  margin-top: 48.2%;
+}
+.turnLight{
+  opacity: 0;
+}
+
+.redLightClass{
+  position: absolute;
+  width: 4%;
+  z-index: 3;
+}
+
+.blueLightClass{
+  position: absolute;
+  width: 4%;
+  z-index: 3;
+}
+
+
 .button {
   width: 60px;
   margin: 10%;
@@ -122,3 +141,4 @@ body {
 .button:hover {
   transform: scale(1.2);
 }
+
