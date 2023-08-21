@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <script src="script.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
@@ -13,34 +12,306 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    
   </head>
-  <body class="container">
-    <div id="container-button" class="row">
-      <div class="col-4">
+  <body onload="isDay()">
+    <div id="container-button">
+      <div>
         <img
-        class="button img-thumbnail rounded-circle"
-        id="daylight"
-        src="img/sky2.png"
-        onclick="redirectToDay()"
-      />
+          class="button"
+          id="daylight"
+          src="img/sky2.png"
+          onclick="redirectToDay()"
+        />
       </div>
-      <div class="col-4">  <img
-        class="button img-thumbnail rounded-circle"
-        id="sunset" 
-        src="img/sunset-fotor-bg-remover-20230819193144.png"
-        onclick="redirectToSunset()"
-      /></div>
-      <div class="col-4"><img
-        class="button img-thumbnail rounded-circle"
-        id="night"
-        src="img/nightButton2.png"
-        onclick="redirectToNight()"
-      /></div>
+      <div>
+        <img
+          class="button"
+          id="sunset"
+          src="img/sunset-fotor-bg-remover-20230819193144.png"
+          onclick="redirectToSunset()"
+        />
+      </div>
+      <div>
+        <img
+          class="button"
+          id="night"
+          src="img/nightButton2.png"
+          onclick="redirectToNight()"
+        />
+      </div>
     </div>
     <script>
       function redirectToDay() {
-        window.location.href = "day.html"; // Cambia por la URL adecuada para el día
+        window.location.href = "index.html"; // Cambia por la URL adecuada para el día
+      }
+
+      function redirectToSunset() {
+        window.location.href = "sunset.html"; // Cambia por la URL adecuada para el atardecer
+      }
+
+      function redirectToNight() {
+        window.location.href = "night.html"; // Cambia por la URL adecuada para la noche
+      }
+    </script>
+    <img id="backgroundImg" alt="" />
+    <div id="container-city">
+      <div id="container/clouds">
+        <img id="cloud1" class="cloud1" alt="" />
+        <img id="cloud" class="cloud" alt="" />
+        <img id="cloud3" class="cloud3" alt="" />
+        <img id="cloud4" class="cloud4" alt="" />
+        <img id="plane" alt="" />
+        <img id="smoke" alt="" />
+        <img id="fire" alt="" />
+        <img id="car" alt="" />
+        <img id="car2" alt="" />
+        <img id="car3" alt="" />
+        <img id="redLight" class="redLightClass" alt="" />
+        <img id="redLight2" class="redLightClass" alt="" />
+        <img id="redLight3" class="redLightClass" alt="" />
+        <img id="redLight4" class="redLightClass" alt="" />
+        <img id="redLight5" class="redLightClass" alt="" />
+        <img id="redLight6" class="redLightClass" alt="" />
+        <img id="redLight7" class="redLightClass" alt="" />
+        <img id="redLight8" class="redLightClass" alt="" />
+
+        <img id="blueLight1" class="blueLightClass" alt="" />
+        <img id="blueLight2" class="blueLightClass" alt="" />
+        <img id="blueLight3" class="blueLightClass" alt="" />
+        <img id="blueLight4" class="blueLightClass" alt="" />
+        <img id="blueLight5" class="blueLightClass" alt="" />
+        <img id="blueLight6" class="blueLightClass" alt="" />
+
+        <img id="helicopter" alt="" />
+
+        <img id="comet" alt="" />
+
+        <img id="moon" alt="" />
+        <!-- Adding windows -->
+        <div class="container-windows-night">
+          <div id="container-windows">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+          <div id="container-windows-2">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+          <div id="container-windows-3">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+          <div id="container-windows-4">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+          <div id="container-windows-5">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+          <div id="container-windows-6">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+          <div id="container-windows-7">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-8">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-9">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-10">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-11">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-12">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-13">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-14">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-15">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-16">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-17">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-18">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-19">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-20">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-21">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-22">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-23">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-24">
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-25">
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-26">
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-27">
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-28">
+            <img class="window turnLight" alt="" />
+          </div>
+
+          <div id="container-windows-29">
+            <img class="window turnLight" alt="" />
+          </div>
+        </div>
+
+        <!-- Adding crows birds -->
+        <div id="container-crow">
+          <div>
+            <img id="crow" alt="" />
+            <img id="crow1" alt="" />
+          </div>
+          <div>
+            <img id="crow2" alt="" />
+            <img id="crow3" alt="" />
+          </div>
+        </div>
+
+        <div id="container-crow2"></div>
+        <div id="container-birds">
+          <img id="group-birds" alt="" />
+          <img id="group-birds2" />
+          <img id="group-birds3" />
+          <img id="group-birds4" />
+          <img id="group-birds5" />
+          <img id="group-birds6" />
+          <img id="group-birds7" />
+        </div>
+
+        <!-- End container-clouds -->
+      </div>
+      <img id="city" src="img/newyork2.png" alt="" />
+      <!-- End container-city -->
+    </div>
+    <script>
+      function redirectToDay() {
+        window.location.href = "index.html"; // Cambia por la URL adecuada para el día
       }
 
       function redirectToSunset() {

@@ -55,10 +55,9 @@ body {
 }
 #container-button {
   display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 100vh; /* Opcional, establece la altura completa de la ventana para centrar verticalmente */
+  flex-direction: column;
+  position: absolute;
+  z-index: 3;
 }
 
 #smoke {
@@ -125,11 +124,11 @@ body {
 }
 
 .button  {
-  width: 300px;
-  margin: 50px;
+  width: 60px;
+  margin: 5px;
+  margin-left: 10%;
   border: 1px solid white;
   border-radius: 200px;
-
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8); /* X, Y, Desenfoque, Color */
   transition: transform 0.2s ease-in-out;
   z-index: 2;
@@ -150,8 +149,3 @@ body {
   transform: scale(1.5);
 }
 
-#container-button2 {
-  display: flex;
-  flex-direction: column;
-  width: 1%;
-}

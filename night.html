@@ -14,14 +14,34 @@
     ></script>
   </head>
   <body onload="isNight()">
+    <div id="container-button">
+      <div>
+        <img
+          class="button"
+          id="daylight"
+          src="img/sky2.png"
+          onclick="redirectToDay()"
+        />
+      </div>
+      <div>
+        <img
+          class="button"
+          id="sunset"
+          src="img/sunset-fotor-bg-remover-20230819193144.png"
+          onclick="redirectToSunset()"
+        />
+      </div>
+      <div>
+        <img
+          class="button"
+          id="night"
+          src="img/nightButton2.png"
+          onclick="redirectToNight()"
+        />
+      </div>
+    </div>
     <img id="backgroundImg" alt="" />
       <div id="container/clouds">
-        <img id="back" src="img/back.png" onclick="comeback()" style="background-color: white; border-radius: 25px;"/>
-        <script>
-          function comeback(){
-            window.location.href = "index.html"
-          }
-        </script>
         <img id="cloud1" class="cloud1" alt="" />
         <img id="cloud" class="cloud" alt="" />
         <img id="cloud3" class="cloud3" alt="" />
@@ -275,5 +295,18 @@
       <img id="city" src="img/newyork2.png" alt="" />
       <!-- End container-city -->
     </div>
+    <script>
+      function redirectToDay() {
+        window.location.href = "index.html"; // Cambia por la URL adecuada para el día
+      }
+
+      function redirectToSunset() {
+        window.location.href = "sunset.html"; // Cambia por la URL adecuada para el atardecer
+      }
+
+      function redirectToNight() {
+        window.location.href = "night.html"; // Cambia por la URL adecuada para la noche
+      }
+    </script>
   </body>
 </html>
