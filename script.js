@@ -448,37 +448,37 @@ function isNight() {
 
   redLight1.src = "img/redLight.png";
   redLight1.style.marginTop = "31.3%";
-  redLight1.style.marginLeft = "2.4%";
+  redLight1.style.marginLeft = "3.1%";
 
   redLight2.src = "img/redLight.png";
   redLight2.style.marginTop = "39%";
-  redLight2.style.marginLeft = "15.7%";
+  redLight2.style.marginLeft = "16.4%";
 
   redLight3.src = "img/redLight.png";
   redLight3.style.marginTop = "23%";
-  redLight3.style.marginLeft = "27.9%";
+  redLight3.style.marginLeft = "28.5%";
 
   redLight4.src = "img/redLight.png";
   redLight4.style.marginTop = "9%";
-  redLight4.style.marginLeft = "38.6%";
+  redLight4.style.marginLeft = "39.3%";
   redLight4.style.width = "7%";
 
   redLight5.src = "img/redLight.png";
   redLight5.style.marginTop = "15%";
-  redLight5.style.marginLeft = "49.5%";
+  redLight5.style.marginLeft = "50.1%";
   redLight5.style.width = "5%";
 
   redLight6.src = "img/redLight.png";
   redLight6.style.marginTop = "26%";
-  redLight6.style.marginLeft = "67.9%";
+  redLight6.style.marginLeft = "68.7%";
 
   redLight7.src = "img/redLight.png";
   redLight7.style.marginTop = "30.6%";
-  redLight7.style.marginLeft = "59.1%";
+  redLight7.style.marginLeft = "59.7%";
 
   redLight8.src = "img/redLight.png";
   redLight8.style.marginTop = "40.6%";
-  redLight8.style.marginLeft = "85.3%";
+  redLight8.style.marginLeft = "86.1%";
 
   const redLightClass = document.querySelectorAll(".redLightClass");
 
@@ -514,15 +514,15 @@ function isNight() {
   blueLight3.style.marginTop = "40.9%";
 
   blueLight4.src = "img/blueLight.png";
-  blueLight4.style.marginLeft = "16.8%";
+  blueLight4.style.marginLeft = "17.8%";
   blueLight4.style.marginTop = "40.9%";
 
   blueLight5.src = "img/blueLight.png";
-  blueLight5.style.marginLeft = "19%";
+  blueLight5.style.marginLeft = "20%";
   blueLight5.style.marginTop = "43%";
 
   blueLight6.src = "img/blueLight.png";
-  blueLight6.style.marginLeft = "21%";
+  blueLight6.style.marginLeft = "22%";
   blueLight6.style.marginTop = "44.8%";
 
   const blueLightClass = document.querySelectorAll(".blueLightClass");
