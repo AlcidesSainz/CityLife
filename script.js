@@ -560,14 +560,14 @@ function isNight() {
   comet.style.position = "absolute";
   comet.style.width = "10%";
   comet.style.marginTop = "-10%";
-  comet.style.marginLeft = "-15%";
+  comet.style.marginLeft = "-50%";
   comet.style.rotate="40deg"
-  comet.style.zIndex = 1;
+  comet.style.zIndex = 0;
 
   anime({
     targets: comet,
-    translateX: 1700,
-    translateY: -600,
+    translateX: 2200,
+    translateY: -900,
     easing: "linear",
     duration: 3000,
     loop: true,
