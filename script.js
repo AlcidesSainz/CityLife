@@ -1,36 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("btnDay").addEventListener("click", function () {
-    setMode("day");
-  });
-
-  document.getElementById("btnSunset").addEventListener("click", function () {
-    setMode("sunset");
-  });
-
-  document.getElementById("btnNight").addEventListener("click", function () {
-    setMode("night");
-  });
-
-  // Obtén el modo almacenado en el localStorage
-  const mode = localStorage.getItem("mode");
-
-  // Ejecuta la función correspondiente según el modo almacenado
-  if (mode === "day") {
-    isDay();
-  } else if (mode === "sunset") {
-    isSunset();
-  } else if (mode === "night") {
-    isNight();
-  }
-});
-
-function setMode(mode) {
-  localStorage.setItem("mode", mode);
-  location.reload();
-}
-
 
 function isDay() {
+  
   const backgroundImg = document.getElementById("backgroundImg");
   backgroundImg.src = "img/sky3.jpg";
 
