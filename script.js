@@ -1,6 +1,4 @@
-
 function isDay() {
-  
   const backgroundImg = document.getElementById("backgroundImg");
   backgroundImg.src = "img/sky3.jpg";
 
@@ -582,6 +580,16 @@ function isNight() {
   moon.style.marginLeft = "85%";
   moon.style.marginTop = "3%";
   moon.style.zIndex = 0;
+
+  anime({
+    targets:moon,
+    translateY:10,
+    rotate:"1turn",
+    duration:30000,
+    easing:"linear",
+    loop:true,
+    direction:"alternate"
+  })
 
   //Adding windows
   const containers = [
