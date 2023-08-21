@@ -559,8 +559,9 @@ function isNight() {
   comet.src = "img/comet.png";
   comet.style.position = "absolute";
   comet.style.width = "10%";
-  comet.style.marginTop = "28%";
+  comet.style.marginTop = "-10%";
   comet.style.marginLeft = "-15%";
+  comet.style.rotate="40deg"
   comet.style.zIndex = 1;
 
   anime({
@@ -568,9 +569,9 @@ function isNight() {
     translateX: 1700,
     translateY: -600,
     easing: "linear",
-    duration: 5000,
+    duration: 3000,
     loop: true,
-    delay: 4000,
+    delay: 2000,
   });
   //Adding moon
   const moon = document.getElementById("moon");
